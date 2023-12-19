@@ -1,8 +1,8 @@
-import express, { Request, Response } from 'express';
+const express = require('express');
 const app = express();
 const port = 3000; // You can use any port you prefer
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: any, res: any) => {
     res.send('Hello, this is your Node.js backend!');
 });
 
